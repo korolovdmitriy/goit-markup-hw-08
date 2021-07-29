@@ -17,10 +17,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-
     <!--Header-->
     <!-- <header class="header">
       <div class="header__conteiner conteiner">
@@ -60,7 +59,7 @@
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -146,12 +145,43 @@
 
       <!-- Our team -->
 
-      <!-- <section class="team">
+      <section class="team">
         <div class="conteiner">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/product-designer.jpg" alt="Дизайнер" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team1.webp 1x, ./images/deckstope/team1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team1.jpg 1x, ./images/deckstope/team1@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team1.webp 1x, ./images/tablet/team1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team1.jpg 1x, ./images/tablet/team1@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team1.webp 1x, ./images/mobile/team1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team1.jpg 1x, ./images/mobile/team1@2x.jpg 2x"
+                />
+                <img src="./images/mobile/team1.jpg" alt="Дизайнер" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__user-name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -188,12 +218,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/frontend-developer.jpg"
-                alt="Фронтэнд разработчик"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team2.webp 1x, ./images/deckstope/team2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team2.jpg 1x, ./images/deckstope/team2@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team2.webp 1x, ./images/tablet/team2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team2.jpg 1x, ./images/tablet/team2@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team2.webp 1x, ./images/mobile/team2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team2.jpg 1x, ./images/mobile/team2@2x.jpg 2x"
+                />
+                <img src="./images/mobile/team2.jpg" alt="Фронтэнд разработчик" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__user-name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -230,7 +286,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/marketing.jpg" alt="Маркетинг" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team3.webp 1x, ./images/deckstope/team3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team3.jpg 1x, ./images/deckstope/team3@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team3.webp 1x, ./images/tablet/team3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team3.jpg 1x, ./images/tablet/team3@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team3.webp 1x, ./images/mobile/team3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team3.jpg 1x, ./images/mobile/team3@2x.jpg 2x"
+                />
+                <img src="./images/mobile/team3.jpg" alt="Маркетинг" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__user-name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -267,7 +354,38 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/ui-designer.jpg" alt="Дизайнер" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team4.webp 1x, ./images/deckstope/team4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/deckstope/team4.jpg 1x, ./images/deckstope/team4@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team4.webp 1x, ./images/tablet/team4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/team4.jpg 1x, ./images/tablet/team4@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team4.webp 1x, ./images/mobile/team4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/mobile/team4.jpg 1x, ./images/mobile/team4@2x.jpg 2x"
+                />
+                <img src="./images/ui-designer.jpg" alt="Дизайнер" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__user-name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -305,7 +423,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Clients-->
       <!-- <section class="clients">
@@ -359,9 +477,9 @@
       </section>
     </main> -->
 
-    <!-- Footer -->
+      <!-- Footer -->
 
-    <!-- <footer class="footer">
+      <!-- <footer class="footer">
       <div class="footer__conteiner conteiner">
         <div class="footer__address">
           <a class="logo" href="./index.html">
@@ -431,9 +549,9 @@
       </div>
     </footer> -->
 
-    <!-- modal -->
+      <!-- modal -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg width="11" height="11">
@@ -491,3 +609,6 @@
     <script src="./js/modal.js"></script>
   </body>
 </html> -->
+    </main>
+  </body>
+</html>
