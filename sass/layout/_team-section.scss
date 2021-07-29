@@ -47,7 +47,13 @@
 }
 
 .team__box {
-  padding: 30px 32px;
+  padding: 24px 122px;
+  @media screen and (min-width: 768px) {
+    padding: 24px 74px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
 }
 
 .team__position {
