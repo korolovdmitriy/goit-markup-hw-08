@@ -85,7 +85,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -614,6 +614,12 @@ img {
 
 .work {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__list {
