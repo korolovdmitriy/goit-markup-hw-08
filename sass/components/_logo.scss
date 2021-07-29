@@ -1,0 +1,15 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--primary-accent-color);
+}
+
+.header-logo-accent {
+  color: var(--logo-accent-color);
+}
+
+.footer-logo-accent {
+  color: var(--primary-white);
+}
