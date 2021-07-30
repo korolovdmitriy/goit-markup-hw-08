@@ -396,6 +396,12 @@ img {
   margin-left: 93px;
 }
 
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__item:not(:last-child) {
   position: relative;
   margin-right: 50px;
@@ -428,12 +434,34 @@ img {
 
 .contact {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: auto;
 }
 
-.contact__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 768px) {
+  .contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact__link {
@@ -808,19 +836,35 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-right: -8px;
+  margin-top: -15px;
 }
 
-.filter__item:not(:last-child) {
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
+
+.filter__item {
   margin-right: 8px;
+  margin-top: 15px;
 }
 
 .filter__button {
@@ -868,15 +912,49 @@ img {
 
 .exsample {
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: -30px;
-  margin-top: -30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .exsample {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .exsample {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .exsample__item {
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 450px;
+}
+
+@media screen and (max-width: 767px) {
+  .exsample__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exsample__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .exsample__item {
+    width: 370px;
+  }
 }
 
 .card {

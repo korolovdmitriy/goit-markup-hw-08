@@ -25,6 +25,10 @@
   display: flex;
   align-items: center;
   margin-left: 93px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .menu__item:not(:last-child) {
@@ -61,12 +65,26 @@
 
 .contact {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: auto;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .contact__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 
 .contact__link {
