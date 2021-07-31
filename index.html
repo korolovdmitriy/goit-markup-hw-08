@@ -26,11 +26,19 @@
         <nav class="navigation">
           <a class="logo" href="./index.html">Web<span class="header-logo-accent">Studio</span></a>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link menu__link_carent" href="./index.html">Студия</a></li>
+            <li class="menu__item">
+              <a class="menu__link menu__link_carent" href="./index.html">Студия</a>
+            </li>
             <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
             <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
           </ul>
         </nav>
+
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
 
         <ul class="contact">
           <li class="contact__item">
@@ -48,6 +56,52 @@
               </svg>
               +38 096 111 11 11
             </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <button class="modal-menu__close-button" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="modile-nav">
+            <li class="modile-nav__item">
+              <a class="modile-nav__link modile-nav__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="modile-nav__item">
+              <a class="modile-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="modile-nav__item">
+              <a class="modile-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="modile-contact">
+          <li class="modile-contact__item">
+            <a class="modile-contact__link-tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+          </li>
+          <li class="modile-contact__item">
+            <a class="modile-contact__link-mail" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -477,9 +531,9 @@
       </section>
     </main>
 
-      <!-- Footer -->
+    <!-- Footer -->
 
-      <footer class="footer">
+    <footer class="footer">
       <div class="footer__conteiner conteiner">
         <div class="footer__address">
           <a class="logo" href="./index.html">
@@ -536,12 +590,18 @@
           <p class="footer__title">Подпишитесь на рассылку</p>
           <form action="#" class="footer__form">
             <label for="sub" class="footer__mail">
-              <input type="email" id="sub" name="subcribe" class="footer__input" placeholder="E-mail">
+              <input
+                type="email"
+                id="sub"
+                name="subcribe"
+                class="footer__input"
+                placeholder="E-mail"
+              />
             </label>
             <button type="submit" class="footer__btn">
-             Подписаться
+              Подписаться
               <svg width="24" height="24" class="sub-form__icon">
-                 <use href="./images/icons.svg#icon-icon-send"></use>
+                <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
@@ -549,9 +609,9 @@
       </div>
     </footer>
 
-      <!-- modal -->
+    <!-- modal -->
 
-      <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg width="11" height="11">
@@ -561,11 +621,11 @@
 
         <form action="#" class="modal-form">
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-        
+
           <label for="name" class="modal-form-field">
             Имя
             <span class="modal-form-input-wrapper">
-              <input type="text" class="modal-form-input" id="name" name="user-name" required>
+              <input type="text" class="modal-form-input" id="name" name="user-name" required />
               <svg width="12" height="12" class="modal-form-input-icon">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
@@ -574,9 +634,8 @@
           <label for="phone" class="modal-form-field">
             Телефон
             <span class="modal-form-input-wrapper">
-              <input type="tel" class="modal-form-input" id="phone" name="phone-number" required>
+              <input type="tel" class="modal-form-input" id="phone" name="phone-number" required />
               <svg width="12" height="12" class="modal-form-input-icon">
-                
                 <use href="./images/icons.svg#icon-tel-modal"></use>
               </svg>
             </span>
@@ -584,7 +643,7 @@
           <label for="mail" class="modal-form-field">
             Почта
             <span class="modal-form-input-wrapper">
-              <input type="email" id="mail" class="modal-form-input" name="email" required>
+              <input type="email" id="mail" class="modal-form-input" name="email" required />
               <svg width="15" height="12" class="modal-form-input-icon">
                 <use href="./images/icons.svg#icon-mail-modal"></use>
               </svg>
@@ -593,13 +652,20 @@
 
           <label for="comments" class="comments">
             Комментарий
-            <textarea name="comment" id="comments" class="modal-form-comments" placeholder="Введите текст"></textarea>
+            <textarea
+              name="comment"
+              id="comments"
+              class="modal-form-comments"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
-               
+
           <label for="checkbox" class="checkbox">
-            <input type="checkbox" id="checkbox" class="checkbox-active visually-hidden">
+            <input type="checkbox" id="checkbox" class="checkbox-active visually-hidden" />
             <span class="checkbox-modal"></span>
-            Соглашаюсь с рассылкой и принимаю&#8201;<a href="#" class="checkbox-link">Условия договора</a> 
+            Соглашаюсь с рассылкой и принимаю&#8201;<a href="#" class="checkbox-link"
+              >Условия договора</a
+            >
           </label>
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
@@ -607,6 +673,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
-   

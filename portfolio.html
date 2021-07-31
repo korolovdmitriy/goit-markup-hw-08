@@ -27,11 +27,21 @@
         <nav class="navigation">
           <a class="logo" href="./index.html">Web<span class="header-logo-accent">Studio</span></a>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="./index.html">Студия</a></li>
-            <li class="menu__item"><a class="menu__link menu__link_carent" href="./portfolio.html">Портфолио</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link  menu__link_carent" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a></li>
           </ul>
         </nav>
+    
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
     
         <ul class="contact">
           <li class="contact__item">
@@ -49,6 +59,52 @@
               </svg>
               +38 096 111 11 11
             </a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="mobile-menu" data-menu>
+        <button class="modal-menu__close-button" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="modile-nav">
+            <li class="modile-nav__item">
+              <a class="modile-nav__link modile-nav__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="modile-nav__item">
+              <a class="modile-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="modile-nav__item">
+              <a class="modile-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <ul class="modile-contact">
+          <li class="modile-contact__item">
+            <a class="modile-contact__link-tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+          </li>
+          <li class="modile-contact__item">
+            <a class="modile-contact__link-mail" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">LinkedIn</a>
           </li>
         </ul>
       </div>
